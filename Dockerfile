@@ -10,7 +10,7 @@ COPY . ./
 # Install the 'serve' package globally inside the container using npm
 RUN npm install -g serve
 
-# Define the default command to run when the container starts:
+# Define the default command to run when the container starts
 # 'serve -s build' serves the static files from the 'build' directory
 CMD ["serve", "-s", "build"]
 
